@@ -20,17 +20,10 @@
         }
         
         let nome = prompt('Qual seu nome?')
-        let alturaInformada = prompt(`${nome} qual sua altura`)
-        let pesoInformado = prompt(`${nome} fale o seu peso`)
+        let alturaInformada = prompt(`${nome} qual sua altura?`)
+        let pesoInformado = prompt(`${nome} ME FALE o seu peso`)
 
-        let pesoTeo = 64
-        let alturaTeo = 1.79
-
-        let imcTeo = pesoTeo / (alturaTeo * alturaTeo)
-        mostrar(imcTeo)
-
-
-
+        mostrar (`O imc de ${nome} é : ${IMC(pesoInformado, alturaInformada)}`)
 
 
     </script>
