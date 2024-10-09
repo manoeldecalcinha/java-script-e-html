@@ -15,6 +15,25 @@
             document.write(texto)
             pulaLinha()
         }
+
+        const tituloCopadomundo = prompt('Quantas Copas do Mundo você ganhou?')
+        const tituloChampionsleague = prompt('Quantas Champions League você ganhou?')
+        const tituloPuskas = prompt('Quantos Puskas você ganhou?')
+        const titulosGanhados = prompt('Quantos titulos você ganhou?')
+
+        let pontos = (tituloCopadomundo * 5) + (tituloChampionsleague * 3) + (tituloPuskas * 2) + parseInt(titulosGanhados)
+
+        mostrar(`O tanto de titulos que você ganhou é de: ${pontos}`)
+
+        if (pontos > 30){
+            mostrar('Você é um ótimo jogador.')
+        } else if(pontos == 30){
+            mostrar('Você é um jogador bom.')
+        } else if(pontos < 30 && pontos > 25){
+            mostrar('Você é bom, mas não o suficiente.')
+        } else {
+            mostrar('Obrigado pelo seu dinheiro.')
+        }
     </script>
 </body>
 </html>

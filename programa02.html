@@ -15,16 +15,25 @@
             pulaLinha()
         }
         
-        function IMC (peso, altura){
-            return peso / (altura * altura)
+        function imc(peso, altura){
+            return imc = peso / (altura * altura)
         }
         
         let nome = prompt('Qual seu nome?')
         let alturaInformada = prompt(`${nome} qual sua altura?`)
         let pesoInformado = prompt(`${nome} ME FALE o seu peso`)
 
-        mostrar (`O imc de ${nome} é : ${IMC(pesoInformado, alturaInformada)}`)
+        mostrar(`O imc de ${nome} é : ${imc(pesoInformado, alturaInformada)}`)
 
+        //mostrar(`O imc do Teo é: ${calculaIMC(1.72, 74)}`)
+
+        if(imc < 18.5){
+            mostrar(`${nome}, seu IMC está abaixo do normal `)
+        }   else if(imc > 25){
+            mostrar(`${nome}, seu IMC está acima do normal`)
+        }  else {
+            mostrar(`${nome}, seu IMC está normal `)
+        }
 
     </script>
 </body>
