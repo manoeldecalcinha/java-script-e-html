@@ -13,17 +13,21 @@
     --laranja-claro: #fca311ff;
     --bege: #e5e5e5ff;
     --branco: #ffffffff;
+    --meiopreto: #03071eff;
+    --vermelhoescuro: #370617ff;
+    --meioescuro: #6a040fff;
+    --vermelho: #9d0208ff;
 }
 
 body{
-    background-color: var(--bege);
+    background-color: var(--meiopreto);
     font-family: var(--fonte-texto);
 }
-header{
-    background-color: var(--branco);
+header, footer{
+    background-color: var(--meiopreto);
     text-align: center;
     padding: 2em;
-    color: var(--preto)
+    color: var(--laranja-claro)
 }
 header h1{
     font-family: var(--fonte-titulo);
@@ -31,4 +35,28 @@ header h1{
 .projetos{
     padding: 2em;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartao{
+    text-align: center;
+    background-color: var(--azul-forte);
+    width: 100%;
+    margin: 1em 0;
+    color: var(--laranja-claro);
+    padding: 1em 0;
+}
+.cartao:hover{
+    background-color: var(--branco);
+
+}
+.cartao a{
+    text-decoration: none;
+    color: var(--vermelho);
+    
+}
+footer a{
+    text-decoration: none;
+    color: var(--laranja-claro);
+
 }
