@@ -55,8 +55,30 @@ header h1{
     color: var(--vermelho);
     
 }
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 footer a{
     text-decoration: none;
-    color: var(--laranja-claro);
-
+    color: var(--bege);
+}
+.principal-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.numero-input{
+    font-size: 1.5em;
+    padding: 1em;
+    border-radius: 15px;
+}
+.numero-botao{
+    margin-left: 1em;
+    font-size: 1.5em;
+    padding: 1em;
+    background-color: var(--laranja-claro);
+    border-radius: 15px;
 }
