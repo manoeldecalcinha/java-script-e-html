@@ -53,7 +53,10 @@ header h1{
 .cartao a{
     text-decoration: none;
     color: var(--vermelho);
-    
+}
+.ultimo-cartao{
+       margin-bottom: 5em;
+
 }
 footer{
     position: fixed;
